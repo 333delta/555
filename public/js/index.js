@@ -56,3 +56,29 @@ dom.addEventListener('touchend', function(e){
             console.log('tap')
         }
     })
+
+
+// 创建一个 xhr 实例
+// var xhr = new XMLHttpRequest();
+// // 打开一个连接   请求方式，请求路径
+// xhr.open('get', 'http://122.10.30.153:9901/index');
+// //发送请求
+// xhr.send();
+// //监听状态变更
+// xhr.onreadystatechange = function(){
+//     if(xhr.status === 200 || xhr.readyState === 4){
+//         console.log('success', JSON.parse(xhr.response))
+//     }
+// }
+
+$.ajax({
+    url: '/api/index',
+    type: 'get',
+    dataType: 'json',
+    success: function(result){
+        console.log('result', result)
+    },
+    complete: function(res){
+        console.log('res', res)
+    }
+})
