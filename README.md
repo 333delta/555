@@ -1,6 +1,6 @@
 * 下载
     ``` 
-        git clone 
+     git clone https://code.aliyun.com/task2016/allcommand.git
     ```
 * 进入目录
     ``` 
